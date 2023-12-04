@@ -169,7 +169,42 @@ def predict_ensemble(dcm_path=List[Union[str, os.PathLike, List[Union[str, os.Pa
 
 '''This is just an example to demonstrate the workflow and give an overview over the used functions and output'''
 if __name__ == "__main__":
-    dcm_path = ['/home/daisy/project_data/DiveMed/DB_images/uke_HH/20101025/4/uke_20101025_Ser4_AP_T0_M0_H3.dcm',
-                '/home/daisy/project_data/DiveMed/DB_images/uke_HH/20101025/4/uke_20101025_Ser4_lat_T0_M0_H3.dcm']
+    # dcm_path = ['/media/achilles/Storage/Xuchu_Liu/Workspace/DataSet/DiveMed/DB_images/uke_HH/20101025/4/uke_20101025_Ser4_AP_T0_M0_H3.dcm',
+    #             '/media/achilles/Storage/Xuchu_Liu/Workspace/DataSet/DiveMed/DB_images/uke_HH/20101025/4/uke_20101025_Ser4_lat_T0_M0_H3.dcm']
+    dcm_path = [['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927141501723.1005.9.7334_0001_110000_16981757850000.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927141501723.1005.9.7334_0001_120000_16981757880001.dcm'],
+    
+                ['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927141610851.1011.7.7724_0002_210000_16981758460067.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927141610851.1011.7.7724_0002_220000_16981758470068.dcm'],
+
+                ['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927141913504.1017.6.9962_0003_310000_1698175810005a.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927141913504.1017.6.9962_0003_320000_1698175812005b.dcm'],
+
+                ['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927142022419.1023.0.2145_0004_410000_16981758510074.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927142022419.1023.0.2145_0004_420000_16981758530075.dcm'],
+
+                ['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927142344551.1029.0.1961_0005_510000_169817586600a6.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927142344551.1029.0.1961_0005_520000_169817586700a7.dcm'],
+
+                ['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927144306038.1035.1.3942_0006_610000_16981758070052.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927144306038.1035.1.3942_0006_620000_16981758080053.dcm'],
+
+                ['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927144611541.1041.8.6391_0007_710000_169817586300a0.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927144611541.1041.8.6391_0007_720000_169817586400a1.dcm'],
+
+                ['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927144744302.1047.8.1153_0008_810000_1698175848006e.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927144744302.1047.8.1153_0008_820000_1698175849006f.dcm'],
+
+                ['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927152458791.1058.5.2718_0009_910000_1698175861009a.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927152458791.1058.5.2718_0009_920000_1698175861009b.dcm'],
+
+                ['D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927154251706.1074.0.2912_0011_1110000_169817586900ac.dcm',
+                'D:\\Xuchu_Liu\\Workspace\\DataSet\\DiveMed\\DB_images\\Rush\\1.2.392.200036.9116.3.1.12582476.20230927154251706.1074.0.2912_0011_1120000_169817587100ad.dcm']
+    ]
+
     config = 'configuration.yml'
     print(predict_series(config, dcm_path))
+    # for dsa in dcm_path:
+    #     print(os.path.basename(dsa[0]))
+    #     print(os.path.basename(dsa[1]))
+    #     print(predict_series(config, dsa))

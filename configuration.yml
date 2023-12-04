@@ -1,11 +1,11 @@
 #maps argmax of model output to a tici-score
 label_mapping:
-  0: TICI 0
-  1: TICI 0
-  2: TICI 2a
-  3: TICI 2b
-  4: TICI 3
-  5: TICI 3
+  0: TICI 0 score 0
+  1: TICI 0 score 1
+  2: TICI 2a score 2
+  3: TICI 2b score 3
+  4: TICI 3 score 4
+  5: TICI 3 score 5
 
 #model parameters to initialize the pretrained model by us
 model_params:
