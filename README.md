@@ -1,3 +1,5 @@
+This repository  is a fork of <https://github.com/IPMI-ICNS-UKE/DeepTICI>
+
 # DeepTICI
 
 This repository contains the official code and model weights for the following STROKE [publication](https://doi.org/10.1161/STROKEAHA.120.033807) (cf. [About](#About) section for details):
