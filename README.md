@@ -1,5 +1,7 @@
 This repository  is a fork of <https://github.com/IPMI-ICNS-UKE/DeepTICI>
 
+<a href="https://colab.research.google.com/github/Achillesy/Thrombolysis_DeepTICI/blob/main/predict.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 # DeepTICI
 
 This repository contains the official code and model weights for the following STROKE [publication](https://doi.org/10.1161/STROKEAHA.120.033807) (cf. [About](#About) section for details):
