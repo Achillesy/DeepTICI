@@ -1,0 +1,103 @@
+0:00:05.360,0:00:14.836
+Thanks to this paper, it takes 
+us into the realm of automated  Thrombolysis in Cerebral Infarction 
+(TICI) scoring using deep learning.
+
+0:00:16.840,0:00:23.197
+I forked the source code provided by the paper 
+on Git Hub and successfully ported it to Colab.
+
+0:00:24.120,0:00:27.393
+Simply click the button to execute.
+
+0:00:31.240,0:00:36.464
+Now, please open the 'Runtime' menu 
+and select 'Change runtime type.’
+
+0:00:37.280,0:00:42.789
+Make sure you are using 
+Python 3 and GPU acceleration.
+
+0:00:46.760,0:00:49.528
+Let's start 'Run all' the code.
+
+0:00:52.095,0:00:53.997
+Run anyway
+
+0:01:00.680,0:01:21.000
+First, it will download and install 
+the PyTorch EfficientNet model.
+
+0:01:23.280,0:01:36.000
+Next, it will install the 
+SimpleITK and Pydicom libraries.
+
+0:01:39.492,0:01:49.156
+Next, it will load pre-defined functions and 
+model parameters. This process may take some time.
+
+0:01:51.002,0:01:59.002
+For ease of data upload, the program will pause at the 'input' function, waiting for your interaction.
+
+0:01:59.604,0:02:03.134
+1, Click the ‘Files’ icon on the left.
+
+0:02:03.925,0:02:07.959
+2, Click the ‘Upload to 
+session storage’ icon above.
+
+0:02:08.618,0:02:15.751
+Please select a set of DICOM files 
+from your local folder for prediction.
+
+0:02:20.960,0:02:29.628
+Please be patient while the 
+files are being uploaded.
+
+0:02:30.551,0:02:37.314
+After confirming that the files are displayed in the list, press Enter in the 'input' box to continue.
+
+0:02:44.499,0:02:53.639
+According to AI prediction, this DSA series 
+scores "TICI 3", with a probability of about 77%.
+
+0:02:58.320,0:03:12.866
+I have displayed the images from 
+the DSA series for visual reference, allowing human experts to compare.
+
+0:03:24.400,0:03:29.680
+The histogram of the DSA 
+series is also intriguing.
+
+0:03:30.640,0:03:35.778
+The final line of code will delete 
+the uploaded files to protect privacy.
+
+0:03:36.240,0:03:43.723
+If you would like to predict another set of data,  please click the 'Predict' hyperlink 
+to return to the Predict section.
+
+0:03:43.723,0:03:53.525
+This time, please click on 'Run after' in  the menu to avoid starting from the 
+beginning, saving an amount of time.
+
+0:03:55.034,0:04:00.000
+Upload the data.
+
+0:04:05.178,0:04:11.093
+Be patient.
+
+0:04:15.000,0:04:21.457
+Press Enter.
+
+0:04:23.550,0:04:28.743
+Predict score.
+
+0:04:34.678,0:04:43.832
+Verify the images.
+
+0:04:49.305,0:04:54.298
+Protecting privacy.
+
+0:04:55.617,0:04:58.866
+Thanks for watching and happy coding
