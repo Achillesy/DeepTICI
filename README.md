@@ -5,4 +5,4 @@ This repository  is a fork of <https://github.com/IPMI-ICNS-UKE/DeepTICI>
 
 [![Automated TICI Scoring with DL](https://img.youtube.com/vi/-zSk1btvAgQ/0.jpg)](https://www.youtube.com/watch?v=-zSk1btvAgQ)
 
-[ColabMed: Automated TICI Scoring with DL](https://www.bilibili.com/video/BV1rN4y1i7Bz/?share_source=copy_web&vd_source=5138dceee18f4d89a99e113d6ab7c61e)
+[ColabMed: Automated TICI Scoring with DL](https://www.bilibili.com/video/BV1rN4y1i7Bz)
